@@ -18,7 +18,7 @@ Fake news is a pressing issue in the digital age, where misinformation spreads r
 ---
 
 ## **Dataset**
-- **Source:** [Dataset Link](#)
+- **Source:** [Dataset Link](spam.csv)
 - **Details:** The dataset contains labeled news articles, where:
   - `1` represents fake news.
   - `0` represents real news.
@@ -133,7 +133,7 @@ Although the overall metrics for the original and tuned models are the same, hyp
 - Accuracy: 95%
 - Precision: 94%
 - Recall: 93%
-**Hyperparameter Tuned XGBoost Metrics:**
+**Hyperparameter Tuned RandomforestClassifier Metrics:**
 - Accuracy: 96%
 - Precision: 96%
 - Recall: 96%
