@@ -43,7 +43,7 @@ Fake news is a pressing issue in the digital age, where misinformation spreads r
 ![Workflow Diagram](pipeline.png)
 
 Steps include:
-1. **Data Cleaning**: Handle missing values and remove unnecessary columns.
+1. **Data Cleaning**: Address missing values and eliminate unneeded columns.
 2. **Text Preprocessing**: Tokenize, lemmatize, and remove stopwords.
 3. **Feature Engineering**: Compute length and punctuation features.
 4. **TF-IDF Vectorization**: Convert cleaned text to numerical data.
