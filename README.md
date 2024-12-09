@@ -56,7 +56,7 @@ Steps include:
 1. Install Python and Git if not already installed.
 2. Clone the repository:
    ```bash
-   git clone <repository-link>```
+   git clone https://github.com/DoshiTirth/Text-Classification-for-Spam-Detection.git```
 3. Navigate to the project directory:
 ```bash
   cd Fake-news-Detector
