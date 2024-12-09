@@ -1,0 +1,11 @@
+﻿Flask
+flask
+pathlib
+pandas
+scikit-learn==1.4.2
+numpy
+seaborn
+nltk
+matplotlib
+regex
+streamlit
