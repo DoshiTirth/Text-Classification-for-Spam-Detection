@@ -2,6 +2,7 @@
 This project implements a Spam Detection System using machine learning. The system classifies email messagees as "Spam" or "Ham" based on their texual content. It incorporates TF-IDF Vectorization, Naive Bayes, Logistic Regression, XGBoost, and hyperparameter tuning to achieve high accuracy.
 
 ## Table of Contents
+- [Project Proposal](#Project_Proposal)
 - [Introduction](#introduction)
 - [Dataset](#Dataset)
 - [Technologies Used](#technologies-used)
@@ -11,6 +12,9 @@ This project implements a Spam Detection System using machine learning. The syst
 - [Results](#results)
 - [Contributions](#contributions)
 - [Future Work](#future-works)
+
+## **Project Proposal**
+
 
 ## **Introduction**
 Fake news is a pressing issue in the digital age, where misinformation spreads rapidly. This project employs a machine learning-based approach to analyze and classify news articles.
