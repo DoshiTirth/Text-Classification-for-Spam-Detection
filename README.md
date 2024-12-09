@@ -164,9 +164,9 @@ The ⁠ results includes all the essential outputs and artifacts generated dur
    - `TFID.pkl`
 
 ## Contributions
-- Applied hyperparameter tuning to RandomForestClassifier using GridSearchCV.
-- Implemented reusable model and preprocessing pipelines.
-- Saved trained models using `joblib`.
+- Conducted hyperparameter optimization for the RandomForestClassifier using GridSearchCV
+- Developed resuable pipelines for model training and data preprocessing.
+- Utilized `joblib` to save the trained models for future use.
   
 ## Future Work
 - Explore advanced NLP models like BERT for improved accuracy.
