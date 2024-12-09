@@ -133,7 +133,7 @@ Although the overall metrics for the original and tuned models are the same, hyp
 - Accuracy: 95%
 - Precision: 94%
 - Recall: 93%
-- **Hyperparameter Tuned XGBoost Metrics:**
+**Hyperparameter Tuned XGBoost Metrics:**
 - Accuracy: 96%
 - Precision: 96%
 - Recall: 96%
