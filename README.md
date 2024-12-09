@@ -65,26 +65,32 @@ Steps include:
 ```
 3. Navigate to the project directory:
 ```bash
-  cd Fake-news-Detector
+  cd Text-Classification-for-Spam-Detection
 ```
 5. Install the required dependencies:
 ```bash
   pip install -r requirements.txt
 ```
-## Usage
-1. Make sure you are still in the same directory.
-2. Train Models:
-```bash
-python train_models.py
-```
-3. start Flask server:
-```bash
-   python app.py
-```
-4. Use the GUI:
-```bash
-streamlit run GUI.py
-```
+## **Usage**
+1. Make sure you still in the project directory. 
+2. Run the Python script to Start The Flask :
+   ```python
+   python Flask_server.py
+   ```
+3. Since the Flask server is running,Open another terminal and navigate to the Repository directory.
+    ```python
+    cd Text-Classification-for-Spam-Detection
+    ```
+5. Test the Saved Predict Model using API request and Steamlit GUI:
+   ```streamlit
+   streamlit run  GUI.py
+   ```
+   There should be a pop up in a web browser
+6. To see the code on how the process of Training the models open the jupyter notebook
+   ```Open With Jupyter notebook or Visual Studio code
+   MLF_SPAM_DETECTION.ipynb
+   ```  
+
 ---
 
 ## **Results**
