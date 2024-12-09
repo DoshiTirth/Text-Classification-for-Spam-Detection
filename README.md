@@ -132,10 +132,10 @@ The following metrics were observed for the tuned model on the test dataset:
 
 ### **Visualization**
 #### Model Performance Plot
-![Model Comparison](#) *(Insert or link to the image of your model comparison bar chart)*
+![Model Comparison](Model_Perfomance.png) 
 
 #### Classification Report
-![Classification Report](#) *(Insert or link to the image of your classification report)*
+![Classification Report](model_com.png) 
 
 Although the overall metrics for the original and tuned models are the same, hyperparameter tuning validated the optimal settings and ensured robustness.
 
