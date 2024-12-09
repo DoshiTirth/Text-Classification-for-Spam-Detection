@@ -155,8 +155,8 @@ Although the overall metrics for the original and tuned models are the same, hyp
 - f1-score: 98%
 Although both models performed well, hyperparameter tuning acuracy reduced
 
-## *Results Showcase*
-The ⁠ results/ ⁠ folder includes all the essential outputs and artifacts generated during the project:
+## Results Showcase
+The ⁠ results includes all the essential outputs and artifacts generated during the project:
 
 ⁠*Saved Models*:
    - `Model.pkl`
