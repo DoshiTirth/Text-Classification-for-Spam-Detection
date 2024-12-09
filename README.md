@@ -2,7 +2,7 @@
 This project implements a Spam Detection System using machine learning. The system classifies email messagees as "Spam" or "Ham" based on their texual content. It incorporates `TF-IDF Vectorization`,`RandomForestClassifier`, `Logistic Regression`, `Naive Bayes`, `Decision Tree Classifier`, and hyperparameter tuning to achieve high accuracy.
 
 ## Table of Contents
-- [Project Proposal](Proposal for Final Project.docx)
+- [Project Proposal](Proposal_for_Final_Project.docx)
 - [Introduction](#introduction)
 - [Dataset](#Dataset)
 - [Technologies Used](#technologies-used)
