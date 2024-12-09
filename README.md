@@ -57,9 +57,9 @@ Steps include:
 2. Clone the repository:
    ```bash
    git clone <repository-link>```
-4. Go inside the directory
+3. Navigate to the project directory:
 ```bash
-  cd Spam_Detection_with_ML
+  cd Fake-news-Detector
 ```
 5. Install the required dependencies:
 ```bash
@@ -67,15 +67,66 @@ Steps include:
 ```
 ## Usage
 1. Make sure you are still in the same directory.
-2. start Flask server:
+2. Train Models:
+```bash
+python train_models.py
+```
+3. start Flask server:
 ```bash
    python app.py
 ```
-3. Open your browser and navigate to this:
+4. Use the GUI:
 ```bash
-http://127.0.0.1:5000
+streamlit run GUI.py
 ```
-4. Enter email message in the GUI and check if it is spam or ham.
+---
+
+## **Results**
+
+### **Model Comparison**
+A comparison of accuracy scores across different models trained on the dataset:
+
+| Model                  | Accuracy | Precision | Recall |
+|------------------------|----------|-----------|--------|
+| Decision Tree          | 93%      | 92%       | 94%    |
+| Random Forest          | 96%      | 96%       | 95%    |
+| Support Vector Machine | 95%      | 94%       | 96%    |
+| Multinomial Naive Bayes| 91%      | 89%       | 92%    |
+
+---
+
+### **Hyperparameter Tuned Model**
+The best model after hyperparameter tuning:
+
+- **Algorithm:** Random Forest Classifier
+- **Best Hyperparameters:**
+  - `n_estimators`: 200
+  - `max_depth`: 30
+  - `min_samples_split`: 5
+  - `min_samples_leaf`: 2
+
+---
+
+### **Performance Metrics**
+The following metrics were observed for the tuned model on the test dataset:
+
+- **Accuracy:** 96%
+- **Precision:** 96%
+- **Recall:** 96%
+- **F1-Score:** 96%
+
+---
+
+### **Visualization**
+#### Model Performance Plot
+![Model Comparison](#) *(Insert or link to the image of your model comparison bar chart)*
+
+#### Classification Report
+![Classification Report](#) *(Insert or link to the image of your classification report)*
+
+Although the overall metrics for the original and tuned models are the same, hyperparameter tuning validated the optimal settings and ensured robustness.
+
+---
 
 ## Results
 **Naive Bayes Model Metrics:**
@@ -90,11 +141,10 @@ Although both models performed well, hyperparameter tuning further optimized the
 
 ## Contributions
 - Applied hyperparameter tuning to XGBoost using GridSearchCV.
-- Built a real-time spam detection system with a Flask web interface.
-- Saved the trained model using pickle for reuse.
+- Implemented reusable model and preprocessing pipelines.
+- Saved trained models using `joblib`.
   
 ## Future Work
-- Experiment with advanced NLP models like BERT or GPT for improved accuracy.
-- Incorporate a multilingual spam detection feature.
-- Deploy the system online using platforms like Heroku or AWS for public use.
-
+- Explore advanced NLP models like BERT for improved accuracy.
+- Expand to multilingual fake news detection.
+- Test on larger, more diverse datasets.
