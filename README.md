@@ -50,9 +50,10 @@ Steps include:
 2. **Text Preprocessing**: Tokenize, lemmatize, and remove stopwords.
 3. **Feature Engineering**: Compute length and punctuation features.
 4. **TF-IDF Vectorization**: Convert cleaned text to numerical data.
-5. **Model Training**: Train multiple models, including Decision Trees and Random Forests.
-6. **Hyperparameter Tuning**: Optimize using `GridSearchCV`.
-7. **Evaluation**: Measure model performance using metrics like accuracy and classification reports.
+5. **Standard Scaler**: Scaling ensures that all features contribute equally to the model's learning process
+6. **Model Training**: Train multiple models, including Decision Trees and Random Forests.
+7. **Hyperparameter Tuning**: Optimize using `GridSearchCV`.
+8. **Evaluation**: Measure model performance using metrics like accuracy and classification reports.
 
 ---
 
@@ -60,7 +61,8 @@ Steps include:
 1. Install Python and Git if not already installed.
 2. Clone the repository:
    ```bash
-   git clone https://github.com/DoshiTirth/Text-Classification-for-Spam-Detection.git```
+   git clone https://github.com/DoshiTirth/Text-Classification-for-Spam-Detection.git
+   ```
 3. Navigate to the project directory:
 ```bash
   cd Fake-news-Detector
