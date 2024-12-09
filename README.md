@@ -20,8 +20,8 @@ Fake news is a pressing issue in the digital age, where misinformation spreads r
 ## **Dataset**
 - **Source:** [Dataset Link](spam.csv)
 - **Details:** The dataset contains labeled news articles, where:
-  - `1` represents fake news.
-  - `0` represents real news.
+  - `1` represents `SPAM`.
+  - `0` represents `HAM`.
 - **Preprocessing Steps:**
   - Removed null values and unnecessary columns.
   - Applied lemmatization and stopword removal for text cleaning.
@@ -29,7 +29,7 @@ Fake news is a pressing issue in the digital age, where misinformation spreads r
 ---
 
 ## **Technologies Used**
-- **Languages:** Python
+- **Languages:** `Python`
 - **Libraries:** 
   - Machine Learning: `scikit-learn`
   - Text Processing: `nltk`, `re`, `string.punctuation`
