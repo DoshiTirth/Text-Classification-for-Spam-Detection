@@ -39,7 +39,7 @@ Fake news is a pressing issue in the digital age, where misinformation spreads r
 ---
 
 ## **Workflow**
-![Workflow Diagram](#) *(Include an image or describe the process)*
+![Workflow Diagram](#) *(https://drive.google.com/file/d/1nq0xdet4Tzdzy1nrplL3uXlK6wnjD1qZ/view?usp=drive_link)*
 
 Steps include:
 1. **Data Cleaning**: Handle missing values and remove unnecessary columns.
