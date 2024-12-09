@@ -100,10 +100,10 @@ A comparison of accuracy scores across different models trained on the dataset:
 
 | Model                  | Accuracy | Precision | Recall |
 |------------------------|----------|-----------|--------|
-| Decision Tree          | 93%      | 92%       | 94%    |
-| Random Forest          | 96%      | 96%       | 95%    |
-| Support Vector Machine | 95%      | 94%       | 96%    |
-| Multinomial Naive Bayes| 91%      | 89%       | 92%    |
+| Decision Tree          | 95%      | 98%       | 97%    |
+| Random Forest          | 97%      | 97%       | 100%    |
+| Support Vector Machine | 92%      | 92%       | 100%    |
+| Multinomial Naive Bayes| 89%      | 89%       | 100%    |
 
 ---
 
@@ -112,20 +112,21 @@ The best model after hyperparameter tuning:
 
 - **Algorithm:** Random Forest Classifier
 - **Best Hyperparameters:**
-  - `n_estimators`: 200
-  - `max_depth`: 30
-  - `min_samples_split`: 5
-  - `min_samples_leaf`: 2
+  - `n_estimators`: 100
+  - `max_depth`: None
+  - `min_samples_split`: 10
+  - `min_samples_leaf`: 1
 
 ---
 
 ### **Performance Metrics**
 The following metrics were observed for the tuned model on the test dataset:
-
-- **Accuracy:** 96%
-- **Precision:** 96%
-- **Recall:** 96%
-- **F1-Score:** 96%
+-**Best_Score** `97%`
+- **Accuracy:** `96%`
+- **Precision:** `96%`
+- **Recall:** `100%`
+- **F1-Score:** `98%`
+- **Cross validation Score** `97%`
 
 ---
 
@@ -141,18 +142,19 @@ Although the overall metrics for the original and tuned models are the same, hyp
 ---
 
 ## Results
-**Naive Bayes Model Metrics:**
-- Accuracy: 95%
-- Precision: 94%
-- Recall: 93%
+**RandomForestClassifier Model Metrics:**
+- Accuracy: 97%
+- Precision: 97%
+- Recall: 100%
+- f1-score: 97%
 **Hyperparameter Tuned RandomforestClassifier Metrics:**
 - Accuracy: 96%
 - Precision: 96%
-- Recall: 96%
-Although both models performed well, hyperparameter tuning further optimized the XGBoost classifier.
-
+- Recall: 100%
+- f1-score: 98%
+Although both models performed well, hyperparameter tuning acuracy reduced
 ## Contributions
-- Applied hyperparameter tuning to XGBoost using GridSearchCV.
+- Applied hyperparameter tuning to RandomForestClassifier using GridSearchCV.
 - Implemented reusable model and preprocessing pipelines.
 - Saved trained models using `joblib`.
   
