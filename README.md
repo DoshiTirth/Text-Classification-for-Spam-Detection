@@ -12,69 +12,51 @@ This project implements a Spam Detection System using machine learning. The syst
 - [Contributions](#contributions)
 - [Future Work](#future-works)
 
-## Introduction
-Email spam poses a major threat by exposing users to scams, phishing, and malware. Current filters often fail, leading to misclassified emails. This project aims to create a more reliable spam detection system using machine learning to develop a more dependable spam detection system.
+## **Introduction**
+Fake news is a pressing issue in the digital age, where misinformation spreads rapidly. This project employs a machine learning-based approach to analyze and classify news articles.
 
-## Dataset
-- **Source:** [Spam Dataset](https://github.com/Apaulgithub/oibsip_taskno4/blob/main/spam.csv)
-- The dataset contains email messages labeled as:
-  - **`spam`**: Unwanted or junk emails.
-  - **`ham`**: Legitimate emails.
-- **Columns in the dataset**:
-  - `Category`: Specifies whether the message is "spam" or "ham".
-  - `Message`: The actual content of the email.
-- **Preprocessing Steps**:
-  1. Dropped unnecessary columns (`Unnamed: 2`, `Unnamed: 3`, `Unnamed: 4`).
-  2. Handled missing values by removing rows with null values.
-  3. Applied **text preprocessing**:
-     - Lowercase the text.
-     - Removed stopwords, numbers, and punctuation.
-     - Applied lemmatization to reduce words to their base forms.
+---
 
-### Example Rows from the Dataset
-| Category | Message                                                                                 |
-|----------|-----------------------------------------------------------------------------------------|
-| ham      | Go until jurong point, crazy.. Available only in bugis n great world la e buffet...     |
-| spam     | Free entry in 2 a wkly comp to win FA Cup final tkts 21st May 2005. Text FA to 87121... |
-| ham      | Ok lar... Joking wif u oni...                                                           |
+## **Dataset**
+- **Source:** [Dataset Link](#)
+- **Details:** The dataset contains labeled news articles, where:
+  - `1` represents fake news.
+  - `0` represents real news.
+- **Preprocessing Steps:**
+  - Removed null values and unnecessary columns.
+  - Applied lemmatization and stopword removal for text cleaning.
 
-### Key Points
-- The dataset has been split into **75% training** and **25% testing** sets.
-- The **TF-IDF Vectorizer** was used to convert the textual data into numerical features for machine learning models.
-  
-## Technologies Used
+---
 
-- **Languages:** `Python`
- - **Libraries:**
-    - Machine Learning: `scikit-learn`, `xgboost`
-    - Text Processing: `nltk`, `re`
-    - Visualization: `matplotlib`, `seaborn`, `wordcloud`
-    - Utilities: `pandas`, `numpy`, `pickle`
-    - Server: `Flask`
-    - Web GUI: `HTML`, `CSS`
+## **Technologies Used**
+- **Languages:** Python
+- **Libraries:** 
+  - Machine Learning: `scikit-learn`
+  - Text Processing: `nltk`, `re`, `string.punctuation`
+  - Visualization: `matplotlib`, `seaborn`
+  - Utilities: `pandas`, `numpy`, `joblib`
 
-## Workflow
+---
 
-1. **Data Cleaning:** Remove unnecessary columns and handle missing values.
-2. **Text Preprocessing:** Apply lemmatization and stopword removal.
-3. **Dataset Splitting:** Divide data into training (75%) and testing (25%).
-4. **TF-IDF Vectorization:** Convert textual data into numerical features.
-5. **Model Training:**
-  - Train models using:
-      - Multinomial Naive Bayes.
-      - Random Forest Regression.
-      - XGBoost (with hyperparameter tuning using GridSearchCV).
-6. **Model Evaluation:** Measure performance using metrics like accuracy, precision, recall, and F1-score.
-7. **Save Model:** Save the trained model using pickle.
-8. **Web Interface:** Build a Flask app for real-time email spam detection.
-                         
-## Installation
-1. [Download Python if you don't have it installed on your system python version should be >=3.9](https://www.python.org/downloads/release/python-3130/)
-2.  [Download the GitHub desktop If needed](https://desktop.github.com/download/)
-3.  Clone the repository where you want:
-```bash
-  https://github.com/DoshiTirth/Spam_Detection_with_ML.git
-```
+## **Workflow**
+![Workflow Diagram](#) *(Include an image or describe the process)*
+
+Steps include:
+1. **Data Cleaning**: Handle missing values and remove unnecessary columns.
+2. **Text Preprocessing**: Tokenize, lemmatize, and remove stopwords.
+3. **Feature Engineering**: Compute length and punctuation features.
+4. **TF-IDF Vectorization**: Convert cleaned text to numerical data.
+5. **Model Training**: Train multiple models, including Decision Trees and Random Forests.
+6. **Hyperparameter Tuning**: Optimize using `GridSearchCV`.
+7. **Evaluation**: Measure model performance using metrics like accuracy and classification reports.
+
+---
+
+## **Installation**
+1. Install Python and Git if not already installed.
+2. Clone the repository:
+   ```bash
+   git clone <repository-link>```
 4. Go inside the directory
 ```bash
   cd Spam_Detection_with_ML
