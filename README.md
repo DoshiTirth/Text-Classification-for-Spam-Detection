@@ -154,6 +154,17 @@ Although the overall metrics for the original and tuned models are the same, hyp
 - Recall: 100%
 - f1-score: 98%
 Although both models performed well, hyperparameter tuning acuracy reduced
+
+## *Results Showcase*
+
+### *Contents of the ⁠ results/ ⁠ Folder*
+The ⁠ results/ ⁠ folder includes all the essential outputs and artifacts generated during the project:
+
+⁠*Saved Models*:
+   - `Model.pkl`
+   - `StandardsScalar.pkl`
+   - `TFID.pkl`
+
 ## Contributions
 - Applied hyperparameter tuning to RandomForestClassifier using GridSearchCV.
 - Implemented reusable model and preprocessing pipelines.
