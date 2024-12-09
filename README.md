@@ -14,7 +14,7 @@ This project implements a Spam Detection System using machine learning. The syst
 - [Future Work](#future-works)
 
 ## **Introduction**
-Fake news is a pressing issue in the digital age, where misinformation spreads rapidly. This project employs a machine learning-based approach to analyze and classify news articles.
+A spam message is an unsolicited or irrelevant message, typically sent in bulk, often for advertising, phishing, or malicious purposes. This project employs a machine learning-based approch to create a robust and efficient solution for automated spam detection.
 
 ---
 
